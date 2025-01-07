@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect
 from .forms import UploadedImageForm
 from .models import UploadedImage
 import base64
-from PIL import Image
-import io
+# from PIL import Image
+# import io
 
 def upload_image(request):
     if request.method == 'POST':
