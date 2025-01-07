@@ -91,7 +91,7 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'binary',
+        'NAME': 'postgres',
         'USER': 'Captain',
         'PASSWORD': 'Captain',
         'HOST': 'localhost',  # Use '127.0.0.1' or the actual IP for remote servers
