@@ -94,7 +94,7 @@ DATABASES = {
         'NAME': 'binary',
         'USER': 'Captain',
         'PASSWORD': 'Captain',
-        # 'HOST': 'localhost',  # Use '127.0.0.1' or the actual IP for remote servers
+        'HOST': 'localhost',  # Use '127.0.0.1' or the actual IP for remote servers
         # 'HOST': 'https://binary-five-tan.vercel.app/',
         'PORT': '5432',  # Default PostgreSQL port
     }
