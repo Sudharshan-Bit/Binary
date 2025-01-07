@@ -75,16 +75,31 @@ WSGI_APPLICATION = 'image.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+import os
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'image_ha29',  # Database name
+#         'USER': 'root',  # User
+#         'PASSWORD': '3NtoU59MWaWp0GwLUnDlGAzOSCVyQ4S5',  # Password
+#         'HOST': 'dpg-cttarr1u0jms73bgsl70-a.virginia-postgres.render.com',  # Host
+#         'PORT': '5432',  # Port
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('POSTGRES_DB', 'image'),
-        'USER': os.getenv('POSTGRES_USER', 'Captain'),
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'Captain'),
-        'HOST': os.getenv('POSTGRES_HOST', 'localhost'),
-        'PORT': os.getenv('POSTGRES_PORT', '5432'),
+        'NAME': 'binary',
+        'USER': 'Captain',
+        'PASSWORD': 'Captain',
+        'HOST': 'localhost',  # Use '127.0.0.1' or the actual IP for remote servers
+        'PORT': '5432',  # Default PostgreSQL port
     }
 }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

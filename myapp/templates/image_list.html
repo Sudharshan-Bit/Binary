@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Uploaded Images</title>
+    <title>Image List</title>
 </head>
 <body>
     <h1>Uploaded Images</h1>
-    <ul>
-        {% for image in images %}
-            <li>{{ image.name }}: <img src="{{ image.image.url }}" alt="{{ image.name }}" width="300"></li>
-        {% endfor %}
-    </ul>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for image, data in combined_data %}
+                <tr>
+                    <td>{{ image.title }}</td>
+                    <td>
+                        {% if data %}
+                            <img src="{{ data }}" alt="Uploaded Image" style="max-width: 200px; max-height: 200px;">
+                        {% else %}
+                            <p>No image available</p>
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>
+
