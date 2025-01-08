@@ -77,28 +77,29 @@ WSGI_APPLICATION = 'image.wsgi.application'
 
 import os
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'image_ha29',  # Database name
-#         'USER': 'root',  # User
-#         'PASSWORD': '3NtoU59MWaWp0GwLUnDlGAzOSCVyQ4S5',  # Password
-#         'HOST': 'dpg-cttarr1u0jms73bgsl70-a.virginia-postgres.render.com',  # Host
-#         'PORT': '5432',  # Port
-#     }
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'Captain',
-        'PASSWORD': 'Captain',
-        'HOST': 'localhost',  # Use '127.0.0.1' or the actual IP for remote servers
-        # 'HOST': 'https://binary-five-tan.vercel.app/',
-        'PORT': '5432',  # Default PostgreSQL port
+        # 'NAME': 'image_ha29',  # Database name
+        'NAME': 'Binary',
+        'USER': 'root',  # User
+        'PASSWORD': '3NtoU59MWaWp0GwLUnDlGAzOSCVyQ4S5',  # Password
+        'HOST': 'dpg-cttarr1u0jms73bgsl70-a.virginia-postgres.render.com',  # Host
+        'PORT': '5432',  # Port
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'Captain',
+#         'PASSWORD': 'Captain',
+#         'HOST': 'localhost',  # Use '127.0.0.1' or the actual IP for remote servers
+#         # 'HOST': 'https://binary-five-tan.vercel.app/',
+#         'PORT': '5432',  # Default PostgreSQL port
+#     }
+# }
 
 
 
